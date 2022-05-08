@@ -59,7 +59,7 @@
           End cooldown
         </button>
         <button class="nes-btn is-warning" @click="claim">
-          Claim {{ availableA }} $Chimp
+          Claim {{ availableA }} $GM
         </button>
       </Vault>
     </div>
