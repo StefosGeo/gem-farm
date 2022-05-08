@@ -1,15 +1,7 @@
 <template>
-  <div class="flex justify-center mb-10">
-    <div class="nes-select is-dark flex-1">
-      <select required id="cluster" v-model="chosenCluster">
-        <option :value="Cluster.Mainnet">Mainnet</option>
-        <option :value="Cluster.Devnet">Devnet</option>
-        <option :value="Cluster.Testnet">Testnet</option>
-        <option :value="Cluster.Localnet">Localnet</option>
-      </select>
-    </div>
-    <div class="nes-select is-dark flex-1">
-      <select required id="wallet" v-model="chosenWallet">
+<div class="nes-container flex text-center mb-10 flex-wrap">
+    <div class="nes-select text-center flex-1 mb-10 width100">
+      <select required id="wallet" class="huVjiU choose-wallet" v-model="chosenWallet">
         <option class="text-gray-500" :value="null">Choose wallet..</option>
         <option :value="WalletName.Phantom">Phantom</option>
         <option :value="WalletName.Sollet">Sollet</option>
@@ -18,6 +10,8 @@
         <option :value="WalletName.SolflareWeb">Solflare Web</option>
       </select>
     </div>
+    <div v-if="farmerAcc" class="connected-wallet flex justify-center align-middle width100">Connected Wallet: <p class="flex ml-3"> {{farmerAcc.identity.toBase58()}}...</p></div>
+    <!-- <img>there will be an image here to disconnect wallet</img> -->
   </div>
 </template>
 
@@ -31,6 +25,8 @@ export default defineComponent({
   setup() {
     // cluster
     const { cluster, setCluster, getClusterURL } = useCluster();
+    setCluster(Cluster.Devnet);
+
     const chosenCluster = computed({
       get() {
         return cluster.value;
@@ -61,4 +57,6 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

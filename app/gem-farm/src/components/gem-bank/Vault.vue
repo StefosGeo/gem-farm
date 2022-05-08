@@ -9,7 +9,7 @@
       class="nes-btn is-primary mr-5"
       @click="moveNFTsOnChain"
     >
-      Move Gems!
+      Confirm moving NFTs
     </button>
     <slot />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="nes-container with-title">
+  <div class="nes-container huVjiU with-title">
     <p class="title">{{ title }}</p>
     <slot />
     <div class="flex flex-wrap">
@@ -35,4 +35,5 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

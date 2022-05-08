@@ -1,18 +1,21 @@
 <template>
-  <ConfigPane />
-  <div v-if="!wallet" class="text-center">Pls connect (burner) wallet</div>
+  <div class="pt-10 px-10 flex justify-center align-middle">
+      <img src="../assets/gm-logo.png" style="width: 15%;"/><br/>
+  </div>
+  <ConfigPane :farmerAcc="farmerAcc" />
+  <div v-if="!wallet" class="text-center"></div>
   <div v-else>
     <!--farm address-->
-    <div class="nes-container with-title mb-10">
+    <!-- <div class="nes-container with-title mb-10">
       <p class="title">Connect to a Farm</p>
       <div class="nes-field mb-5">
         <label for="farm">Farm address:</label>
         <input id="farm" class="nes-input" v-model="farm" />
       </div>
-    </div>
+    </div> -->
 
     <div v-if="farmerAcc">
-      <FarmerDisplay
+      <!-- <FarmerDisplay
         :key="farmerAcc"
         :farm="farm"
         :farmAcc="farmAcc"
@@ -20,7 +23,7 @@
         :farmerAcc="farmerAcc"
         class="mb-10"
         @refresh-farmer="handleRefreshFarmer"
-      />
+      /> -->
       <Vault
         :key="farmerAcc"
         class="mb-10"
@@ -36,21 +39,21 @@
         </button>
         <button
           v-if="farmerState === 'unstaked'"
-          class="nes-btn is-success mr-5"
+          class="enabled-button nes-btn huVjiU is-success uxbuttonleft"
           @click="beginStaking"
         >
-          Begin staking
+          Start staking
         </button>
         <button
           v-if="farmerState === 'staked'"
-          class="nes-btn is-error mr-5"
+          class="danger-button nes-btn huVjiU is-error uxbuttonleft"
           @click="endStaking"
         >
           End staking
         </button>
         <button
           v-if="farmerState === 'pendingCooldown'"
-          class="nes-btn is-error mr-5"
+          class="danger-button nes-btn huVjiU is-error uxbuttonleft"
           @click="endStaking"
         >
           End cooldown
@@ -76,7 +79,7 @@
 <script lang="ts">
 import { defineComponent, nextTick, onMounted, ref, watch } from 'vue';
 import useWallet from '@/composables/wallet';
-import useCluster from '@/composables/cluster';
+import useCluster, {BankAddr} from '@/composables/cluster';
 import { initGemFarm } from '@/common/gem-farm';
 import { PublicKey } from '@solana/web3.js';
 import ConfigPane from '@/components/ConfigPane.vue';
@@ -153,6 +156,8 @@ export default defineComponent({
       if (getWallet() && getConnection()) {
         gf = await initGemFarm(getConnection(), getWallet()!);
         farmerIdentity.value = getWallet()!.publicKey?.toBase58();
+        farm.value = BankAddr.Chimp;
+
 
         //reset stuff
         farmAcc.value = undefined;

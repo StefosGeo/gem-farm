@@ -18,6 +18,14 @@ const clusterURLMapping = {
   localnet: process.env.VUE_APP_LOCALNET_URL || 'http://localhost:8899',
 };
 
+
+export enum BankAddr {
+  DEV = '2S2G3UQQG4wABb5QgWreEPRrgPb5PSABJKFb51RTzZdY',
+ //  LUX = '9VTFBGEhy3KAVR1WNQxPeuZrKevVyoayUUGUixaVoLQ3',
+  Chimp = "GMmjNJiz6bM97iwffp8UcASXCj28eDR58SpQguz7oEnx",
+  //LUX = '2S2G3UQQG4wABb5QgWreEPRrgPb5PSABJKFb51RTzZdY',
+}
+
 const cluster = ref<Cluster>(Cluster.Mainnet);
 
 export default function useCluster() {
