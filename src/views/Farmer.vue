@@ -59,7 +59,7 @@
           End cooldown
         </button>
         <button class="nes-btn is-warning" @click="claim">
-          Claim {{ availableA }} A / {{ availableB }} B
+          Claim {{ availableA }} $Chimp
         </button>
       </Vault>
     </div>
