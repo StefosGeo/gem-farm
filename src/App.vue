@@ -1,6 +1,5 @@
 <template>
   <div class="relative h-full min-h-screen">
-
     <div class="p-10">
       <router-view />
     </div>
@@ -21,9 +20,13 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: 'Press Start 2P', monospace;
+body {
+  background-image: url('./assets/background.jpg');
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
 input[type='radio']:checked + span {
   @apply text-black;
 }

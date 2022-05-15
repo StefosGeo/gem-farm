@@ -19,7 +19,7 @@
     <!--left-->
     <NFTGrid
       title="Your wallet"
-      class="flex-1"
+      class="flex-1 container"
       :nfts="desiredWalletNFTs"
       @selected="handleWalletSelected"
     />
@@ -303,6 +303,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.container {
+  background-color: #363636;
+}
 .locked {
   @apply text-center bg-black text-white;
   width: 100%;

@@ -1,166 +1,184 @@
-
 body {
-    margin: 0;
-    font-family: poppins,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* background: rgb(32,31,94); */
-    /* background: radial-gradient(229.72% 246.14% at 189.1% 122.89%, #8D07A2 0%, #010B33 100%); */
-    /* background-image: url("../assets/background_vector.png"), radial-gradient(229.72% 246.14% at 189.1% 122.89%, #8D07A2 0%, #010B33 100%); */
-    background-color: #fddb69;
-    color: #fff;
+  margin: 0;
+  font-family: poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(32,31,94); */
+  /* background: radial-gradient(229.72% 246.14% at 189.1% 122.89%, #8D07A2 0%, #010B33 100%); */
+  /* background-image: url("../assets/background_vector.png"), radial-gradient(229.72% 246.14% at 189.1% 122.89%, #8D07A2 0%, #010B33 100%); */
+  background-color: gray;
+  color: #fff;
 }
 .huVjiU {
-    text-decoration: none;
-    padding: 10px 25px;
-    font-size: 10px;
-    color: rgb(172, 94, 94);
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    /* font-weight: bold; */
-    /* border: solid 2px #fff!important;
-    border-radius: 3px; */
-} 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #797979;
+}
 .choose-wallet {
-    border: solid 2px rgb(254, 255, 241)!important;
-    border-radius: 3px; 
-    background-color: #fdda699a;
+  width: 1037px;
+  height: 80px;
+  left: 201px;
+  top: 275px;
+  background: #363636;
+  border-radius: 12px;
 }
 .mb-10 {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 .flex {
-    display: flex;
+  display: flex;
 }
-select
-{
+select {
   background-color: transparent;
 }
+
 .nes-container {
-    position: relative;
-    padding: 2.5rem 2rem;
+  position: relative;
+  border-radius: 15px;
+  /* padding: 2.5rem 2rem; */
+  padding: 32px;
 }
-.disabled-button{
-    background-color:#DF5E6A;
-    color:#fff;
-    border-radius: 3px
+.disabled-button {
+  background-color: #df5e6a;
+  color: #fff;
+  border-radius: 3px;
 }
-.enabled-button{
-    background-color:#92aa39;
-    color:#fff;
-    border-radius: 3px;
+.enabled-button {
+  background-color: #92aa39;
+  color: #fff;
+  border-radius: 3px;
 }
-.danger-button{
-    background-color:#d14242;
-    color:#fff;
-    border-radius: 3px;
+.danger-button {
+  background-color: #d14242;
+  color: #fff;
+  border-radius: 3px;
 }
 .nes-btn {
-    border: solid 2px #fff!important;
-    border-radius: 3px;
+  border: solid 2px #fff !important;
+  border-radius: 3px;
 }
 .new-staking-account {
-    background-color: #fdda699a;
+  background-color: #fdda699a;
 }
-.left-buttons{
-    width: 50%;
-    text-align: right;
-    font-weight: normal;
+.left-buttons {
+  width: 50%;
+  text-align: right;
+  font-weight: normal;
 }
 .title {
-    font-size: 18px;
-    padding: 5px
+  font-size: 18px;
+  padding: 5px;
 }
-.right-buttons{
-    width: 50%;
-    text-align: left;
-    font-weight: normal;
+.right-buttons {
+  width: 50%;
+  text-align: left;
+  font-weight: normal;
 }
-.uxbuttonleft{
-    margin-right: 38px;
+.uxbuttonleft {
+  margin-right: 38px;
 }
-.uxbuttonright{
-    margin-left: 38px;
+.uxbuttonright {
+  margin-left: 38px;
 }
-.hpbutton{
-    display:flex;
-    align-items:center;
-    padding-left:25px;
+.hpbutton {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
 }
 .modal-header {
-    font-weight: bold;
-    margin: 15px;
-    font-size: larger;
-    text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px;
+  font-size: larger;
+  text-transform: uppercase;
 }
 .modal-content {
-    margin: 30px;
+  margin: 30px;
 }
-.modal-spinner {    
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin: 10px;
+.modal-spinner {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px;
 }
-.flex-wrap{
-    flex-wrap: wrap;
+.flex-wrap {
+  flex-wrap: wrap;
 }
-.width100{
-    width: 100%;
+.width100 {
+  width: 100%;
 }
 .locked {
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 10;
-    border: 2px solid #99aa39b7;
-    border-radius: 5px;
-    background: rgb(140,140,140);
-    background: linear-gradient(15deg, rgba(140,140,140,0.2) 0%, rgba(255,255,255,0.2) 56%);
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 10;
+  border: 2px solid #99aa39b7;
+  border-radius: 5px;
+  background: rgb(140, 140, 140);
+  background: linear-gradient(
+    15deg,
+    rgba(140, 140, 140, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 56%
+  );
+}
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
   }
-  .spinner {
-    animation: rotator 1.4s linear infinite;
+  100% {
+    transform: rotate(270deg);
   }
-  
-  @keyframes rotator {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(270deg); }
+}
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    stroke: rgb(93, 255, 156);
   }
-  
-  .path {
-    stroke-dasharray: 187;
-    stroke-dashoffset: 0;
-    transform-origin: center;
-    animation:
-      dash 1.4s ease-in-out infinite, 
-      colors 5.6s ease-in-out infinite;
+  25% {
+    stroke: rgb(84, 201, 129);
   }
-  
-  @keyframes colors {
-      0% { stroke: rgb(93, 255, 156,); }
-      25% { stroke: rgb(84, 201, 129); }
-      50% { stroke: rgb(92, 228, 144); }
-      75% { stroke: rgb(65, 209, 121); }
-    100% { stroke: rgb(93, 255, 156); }
+  50% {
+    stroke: rgb(92, 228, 144);
   }
-  
-  @keyframes dash {
-   0% { stroke-dashoffset: 187; }
-   50% {
-     stroke-dashoffset: 46.75;
-     transform:rotate(135deg);
-   }
-   100% {
-     stroke-dashoffset: 187;
-     transform:rotate(450deg);
-   }
+  75% {
+    stroke: rgb(65, 209, 121);
   }
+  100% {
+    stroke: rgb(93, 255, 156);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}

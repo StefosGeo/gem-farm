@@ -1,6 +1,8 @@
 <template>
-  <div class="nes-container huVjiU with-title">
-    <p class="title">{{ title }}</p>
+  <div class="nes-container huVjiU with-title p-0">
+    <div class="text-center title">
+      <p>{{ title }}</p>
+    </div>
     <slot />
     <div class="flex flex-wrap">
       <NFTCard
@@ -35,5 +37,13 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
+.title {
+  background-color: #474747;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  color: white;
+}
 </style>

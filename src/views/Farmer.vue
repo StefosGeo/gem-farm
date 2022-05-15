@@ -1,6 +1,6 @@
 <template>
   <div class="pt-10 px-10 flex justify-center align-middle">
-      <img src="../assets/gm-logo.png" style="width: 15%;"/><br/>
+    <img src="../assets/gm-logo.png" style="width: 15%" /><br />
   </div>
   <ConfigPane :farmerAcc="farmerAcc" />
   <div v-if="!wallet" class="text-center"></div>
@@ -26,7 +26,7 @@
       /> -->
       <Vault
         :key="farmerAcc"
-        class="mb-10"
+        class="mb-10 text-center"
         :vault="farmerAcc.vault.toBase58()"
         @selected-wallet-nft="handleNewSelectedNFT"
       >
@@ -46,7 +46,7 @@
         </button>
         <button
           v-if="farmerState === 'staked'"
-          class="danger-button nes-btn huVjiU is-error uxbuttonleft"
+          class="nes-btn huVjiU is-error uxbuttonleft"
           @click="endStaking"
         >
           End staking
@@ -79,7 +79,7 @@
 <script lang="ts">
 import { defineComponent, nextTick, onMounted, ref, watch } from 'vue';
 import useWallet from '@/composables/wallet';
-import useCluster, {BankAddr} from '@/composables/cluster';
+import useCluster, { BankAddr } from '@/composables/cluster';
 import { initGemFarm } from '@/common/gem-farm';
 import { PublicKey } from '@solana/web3.js';
 import ConfigPane from '@/components/ConfigPane.vue';
@@ -157,7 +157,6 @@ export default defineComponent({
         gf = await initGemFarm(getConnection(), getWallet()!);
         farmerIdentity.value = getWallet()!.publicKey?.toBase58();
         farm.value = BankAddr.Chimp;
-
 
         //reset stuff
         farmAcc.value = undefined;
