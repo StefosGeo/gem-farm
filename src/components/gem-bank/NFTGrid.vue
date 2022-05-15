@@ -4,7 +4,7 @@
       <p>{{ title }}</p>
     </div>
     <slot />
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap min-h-500">
       <NFTCard
         v-for="nft in nfts"
         :key="nft"

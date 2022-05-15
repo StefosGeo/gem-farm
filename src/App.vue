@@ -1,8 +1,8 @@
 <template>
-  <div class="relative h-full min-h-screen">
-    <div class="px-40">
+  <div class="relative h-full min-h-screen px-40">
+    
       <router-view />
-    </div>
+    
 
     <!-- <div class="pt-10"></div> -->
     <!-- <TheCat /> -->

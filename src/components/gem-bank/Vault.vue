@@ -1,16 +1,6 @@
 <template>
   <!--control buttons-->
-  <div class="mb-20 flex justify-evenly	" >
-    <button
-      v-if="
-        (toWalletNFTs && toWalletNFTs.length) ||
-        (toVaultNFTs && toVaultNFTs.length)
-      "
-      class="nes-btn is-primary mr-5"
-      @click="moveNFTsOnChain"
-    >
-      Confirm moving NFTs
-    </button>
+  <div class="mb-20 flex justify-evenly">
     <slot />
   </div>
 
@@ -20,16 +10,16 @@
     <NFTGrid
       title="Your wallet"
       bg_color="#474747"
-      class="flex-1 container "
+      class="flex-1 container"
       :nfts="desiredWalletNFTs"
       @selected="handleWalletSelected"
     />
 
     <!--mid-->
-    <div class="m-5 flex flex-col row-auto">
+    <div class="m-5 flex flex-col">
       <ArrowButton
         :disabled="vaultLocked"
-        class="my-2"
+        class="my-2 pb-10"
         @click="moveNFTsFE(false)"
       />
       <ArrowButton
@@ -56,6 +46,19 @@
         <p class="mt-10">This vault is locked!</p>
       </div>
     </NFTGrid>
+  </div>
+  <div class="pt-5 flex-wrap justify-center" style="width: 120px">
+
+    <button
+      v-if="
+        (toWalletNFTs && toWalletNFTs.length) ||
+        (toVaultNFTs && toVaultNFTs.length)
+      "
+      class="nes-btn is-primary mr-8"
+      @click="moveNFTsOnChain"
+    >
+      Confirm moving NFTs
+    </button>
   </div>
 </template>
 
