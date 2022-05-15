@@ -1,6 +1,6 @@
 <template>
   <!--control buttons-->
-  <div class="mb-10 flex justify-center">
+  <div class="mb-20 flex justify-evenly	" >
     <button
       v-if="
         (toWalletNFTs && toWalletNFTs.length) ||
@@ -15,17 +15,18 @@
   </div>
 
   <!--wallet + vault view-->
-  <div class="flex items-stretch">
+  <div class="flex justify-evenly">
     <!--left-->
     <NFTGrid
       title="Your wallet"
-      class="flex-1 container"
+      bg_color="#474747"
+      class="flex-1 container "
       :nfts="desiredWalletNFTs"
       @selected="handleWalletSelected"
     />
 
     <!--mid-->
-    <div class="m-2 flex flex-col">
+    <div class="m-5 flex flex-col row-auto">
       <ArrowButton
         :disabled="vaultLocked"
         class="my-2"
@@ -43,6 +44,7 @@
     <NFTGrid
       v-if="bank && vault"
       title="Your vault"
+      bg_color="#f07604"
       class="flex-1"
       :nfts="desiredVaultNFTs"
       @selected="handleVaultSelected"
@@ -201,10 +203,13 @@ export default defineComponent({
         //empty selected walelt
         selectedWalletNFTs.value = [];
       }
+      // console.log("invoce on ChainS")
+      // moveNFTsOnChain();
     };
 
     //todo jam into single tx
     const moveNFTsOnChain = async () => {
+      console.log('trying to move gems');
       for (const nft of toVaultNFTs.value) {
         console.log(nft);
         const creator = new PublicKey(

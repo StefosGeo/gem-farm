@@ -1,10 +1,10 @@
 <template>
   <div class="relative h-full min-h-screen">
-    <div class="p-10">
+    <div class="px-40">
       <router-view />
     </div>
 
-    <div class="pt-10"></div>
+    <!-- <div class="pt-10"></div> -->
     <!-- <TheCat /> -->
     <!-- <TheFooter /> -->
   </div>

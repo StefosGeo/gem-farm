@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-10 px-10 flex justify-center align-middle">
+  <div class="pt-10 px-10 flex justify-center	 align-middle">
     <img src="../assets/gm-logo.png" style="width: 15%" /><br />
   </div>
   <ConfigPane :farmerAcc="farmerAcc" />
@@ -24,12 +24,14 @@
         class="mb-10"
         @refresh-farmer="handleRefreshFarmer"
       /> -->
+      <div class="min-h-500">
       <Vault
         :key="farmerAcc"
         class="mb-10 text-center"
         :vault="farmerAcc.vault.toBase58()"
         @selected-wallet-nft="handleNewSelectedNFT"
       >
+      <!-- <div class="flex justify-center content-between"> -->
         <button
           v-if="farmerState === 'staked' && selectedNFTs.length > 0"
           class="nes-btn is-primary mr-5"
@@ -39,14 +41,14 @@
         </button>
         <button
           v-if="farmerState === 'unstaked'"
-          class="enabled-button nes-btn huVjiU is-success uxbuttonleft"
+          class="enabled-button nes-btn huVjiU is-success uxbuttonleft "
           @click="beginStaking"
         >
           Start staking
         </button>
         <button
           v-if="farmerState === 'staked'"
-          class="nes-btn huVjiU is-error uxbuttonleft"
+          class="danger-button  nes-btn huVjiU is-error uxbuttonleft"
           @click="endStaking"
         >
           End staking
@@ -58,10 +60,12 @@
         >
           End cooldown
         </button>
-        <button class="nes-btn is-warning" @click="claim">
+        <button class="nes-btn  huVjiU is-warning orange_c " @click="claim">
           Claim {{ availableA }} $GM
         </button>
+      <!-- </div> -->
       </Vault>
+      </div>
     </div>
     <div v-else>
       <div class="w-full text-center mb-5">

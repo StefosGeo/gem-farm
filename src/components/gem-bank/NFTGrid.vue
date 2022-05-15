@@ -1,6 +1,6 @@
 <template>
-  <div class="nes-container huVjiU with-title p-0">
-    <div class="text-center title">
+  <div class="nes-container huVjiU with-title p-0" >
+    <div class="text-center title" :style="{backgroundColor: bg_color}">
       <p>{{ title }}</p>
     </div>
     <slot />
@@ -25,6 +25,7 @@ export default defineComponent({
   props: {
     title: String,
     nfts: Array,
+    bg_color: String,
   },
   setup(props, ctx) {
     const handleSelected = (e: any) => {

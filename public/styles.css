@@ -9,13 +9,17 @@ body {
   background-color: gray;
   color: #fff;
 }
+
+.orange_c {
+  background-color: #f07604;
+}
 .huVjiU {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 33px;
-  color: #797979;
+  color: #ffffff;
 }
 .choose-wallet {
   width: 1037px;
@@ -61,7 +65,8 @@ select {
 }
 .nes-btn {
   border: solid 2px #fff !important;
-  border-radius: 3px;
+  border-radius: 5px;
+  width: 100%;
 }
 .new-staking-account {
   background-color: #fdda699a;
@@ -75,16 +80,21 @@ select {
   font-size: 18px;
   padding: 5px;
 }
+.title_g {
+  font-size: 18px;
+  padding: 5px;
+  background-color:#f08b47;
+}
 .right-buttons {
   width: 50%;
   text-align: left;
   font-weight: normal;
 }
 .uxbuttonleft {
-  margin-right: 38px;
+  margin-right: 100px;
 }
 .uxbuttonright {
-  margin-left: 38px;
+  margin-left: 100px;
 }
 .hpbutton {
   display: flex;
