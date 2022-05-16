@@ -83,7 +83,7 @@ select {
 .title_g {
   font-size: 18px;
   padding: 5px;
-  background-color:#f08b47;
+  background-color: #f08b47;
 }
 .right-buttons {
   width: 50%;
@@ -91,10 +91,10 @@ select {
   font-weight: normal;
 }
 .uxbuttonleft {
-  margin-right: 100px;
+  margin-right: 210px;
 }
 .uxbuttonright {
-  margin-left: 100px;
+  margin-left: 210px;
 }
 .hpbutton {
   display: flex;

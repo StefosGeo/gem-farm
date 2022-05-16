@@ -16,18 +16,30 @@
     />
 
     <!--mid-->
-    <div class="m-5 flex flex-col">
+    <div class="p-16 m-5 flex flex-col justify-center align-center">
       <ArrowButton
         :disabled="vaultLocked"
-        class="my-2 pb-10"
+        class="my-2 pb-20 justify-center align-center"
         @click="moveNFTsFE(false)"
       />
       <ArrowButton
         :disabled="vaultLocked"
-        class="my-2"
+        class="my-2 justify-center align-center"
         :left="true"
         @click="moveNFTsFE(true)"
       />
+      <div class="pt-12">
+        <button
+          v-if="
+            (toWalletNFTs && toWalletNFTs.length) ||
+            (toVaultNFTs && toVaultNFTs.length)
+          "
+          class="nes-btn is-primary is-warning"
+          @click="moveNFTsOnChain"
+        >
+          Confirm
+        </button>
+      </div>
     </div>
 
     <!--right-->
@@ -47,8 +59,7 @@
       </div>
     </NFTGrid>
   </div>
-  <div class="pt-5 flex-wrap justify-center" style="width: 120px">
-
+  <!-- <div class="pt-5 flex-wrap justify-center" style="width: 120px">
     <button
       v-if="
         (toWalletNFTs && toWalletNFTs.length) ||
@@ -59,7 +70,7 @@
     >
       Confirm moving NFTs
     </button>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts">
