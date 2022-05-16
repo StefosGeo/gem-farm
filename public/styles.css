@@ -53,6 +53,9 @@ select {
   color: #fff;
   border-radius: 3px;
 }
+.vault-container {
+  background-color: #382a20;
+}
 .enabled-button {
   background-color: #92aa39;
   color: #fff;

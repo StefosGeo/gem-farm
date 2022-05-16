@@ -47,7 +47,7 @@
       v-if="bank && vault"
       title="Your vault"
       bg_color="#f07604"
-      class="flex-1"
+      class="flex-1 vault-container"
       :nfts="desiredVaultNFTs"
       @selected="handleVaultSelected"
     >
