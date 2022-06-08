@@ -21,7 +21,7 @@ export default {
 
 <style>
 body {
-  background-image: url('./assets/Background.jpg');
+  background-image: url('./assets/bg-bads.png');
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;
