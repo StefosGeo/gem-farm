@@ -9,8 +9,8 @@
     <!--left-->
     <NFTGrid
       title="Your wallet"
-      bg_color="#474747"
-      class="flex-1 container"
+      bg_color="#4f4d52"
+      class="flex-1 container vault-container-left "
       :nfts="desiredWalletNFTs"
       @selected="handleWalletSelected"
     />
@@ -46,7 +46,7 @@
     <NFTGrid
       v-if="bank && vault"
       title="Your vault"
-      bg_color="#f07604"
+      bg_color="#961d80"
       class="flex-1 vault-container"
       :nfts="desiredVaultNFTs"
       @selected="handleVaultSelected"

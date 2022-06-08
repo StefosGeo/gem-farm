@@ -1,6 +1,6 @@
 <template>
   <div class="pt-10 px-10 flex justify-center align-middle">
-    <img src="../assets/gm-logo.png" style="width: 15%" /><br />
+    <img src="../assets/bads2-removebg-preview.png" style="width: 20%" /><br />
   </div>
   <ConfigPane :farmerAcc="farmerAcc" />
   <div v-if="!wallet" class="text-center"></div>

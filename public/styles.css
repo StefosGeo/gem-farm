@@ -11,7 +11,7 @@ body {
 }
 
 .orange_c {
-  background-color: #f07604;
+  background-color: #961d80;
 }
 .huVjiU {
   font-family: 'Poppins';
@@ -55,9 +55,14 @@ select {
 }
 .vault-container {
   background-color: #382a20;
+  opacity: 0.8;
+}
+.vault-container-left {
+  background-color: #3b3a3a;
+  opacity: 0.8;
 }
 .enabled-button {
-  background-color: #92aa39;
+  background-color: #4f4d52;
   color: #fff;
   border-radius: 3px;
 }

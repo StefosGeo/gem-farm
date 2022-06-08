@@ -77,6 +77,7 @@ export default defineComponent({
   position: relative;
   display: inline-block;
   color: #555;
+  opacity: 0.7;
 }
 
 .select select {

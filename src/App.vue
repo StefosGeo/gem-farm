@@ -21,7 +21,7 @@ export default {
 
 <style>
 body {
-  background-image: url('./assets/background.jpg');
+  background-image: url('./assets/Background.jpeg');
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;
