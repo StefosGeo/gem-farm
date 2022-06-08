@@ -7,11 +7,26 @@ const {
   metadata: { Metadata },
 } = programs;
 
+export interface creator {
+  address: string;
+  share: number;
+}
+
+interface creators extends Array<creator>{}
+
+export interface properties {
+  creators: creators
+}
+export interface metadata {
+  attributes: unknown;
+  properties: properties;
+}
+
 export interface INFT {
   pubkey?: PublicKey;
   mint: PublicKey;
   onchainMetadata: unknown;
-  externalMetadata: unknown;
+  externalMetadata: metadata;
 }
 
 async function getTokensByOwner(owner: PublicKey, conn: Connection) {
@@ -59,8 +74,18 @@ export async function getNFTMetadataForMany(
   tokens.forEach((t) => promises.push(getNFTMetadata(t.mint, conn, t.pubkey)));
   const nfts = (await Promise.all(promises)).filter((n) => !!n);
   console.log(`found ${nfts.length} metadatas`);
+  var nft;
+  var clean_nfts = [];
+  for (nft of nfts){
+    if (nft){
+    console.log(nft.externalMetadata.properties.creators[0].address)
+    if (nft.externalMetadata.properties.creators[0].address == "124gsxb7T9MHCULHB7tyhA3hkUoV1mStbARJSbZe3zXA")
+    clean_nfts.push(nft)
+    }
+  }
+  console.log("clean_nfts", clean_nfts)
 
-  return nfts as INFT[];
+  return clean_nfts as INFT[];
 }
 
 export async function getNFTsByOwner(

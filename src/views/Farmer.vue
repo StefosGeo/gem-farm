@@ -160,7 +160,7 @@ export default defineComponent({
       if (getWallet() && getConnection()) {
         gf = await initGemFarm(getConnection(), getWallet()!);
         farmerIdentity.value = getWallet()!.publicKey?.toBase58();
-        farm.value = BankAddr.Chimp;
+        farm.value = BankAddr.Bads;
 
         //reset stuff
         farmAcc.value = undefined;
