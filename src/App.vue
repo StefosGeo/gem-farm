@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style>
+
+
 body {
   background-image: url('./assets/bg-bads.png');
   background-size: cover; /* <------ */

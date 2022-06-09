@@ -1,6 +1,12 @@
+
+@font-face{
+  font-family: "DIMIS";;
+  src: local("DIMIS"), url(./fonts/DIMITRI_.TTF);
+}
+
 body {
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: "DIMIS", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: rgb(32,31,94); */
@@ -10,11 +16,12 @@ body {
   color: #fff;
 }
 
+
 .orange_c {
   background-color: #961d80;
 }
 .huVjiU {
-  font-family: 'Poppins';
+  font-family: 'DIMIS';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
