@@ -1,5 +1,5 @@
 <template>
-  <div class="nes-container flex text-center mb-10 flex-wrap">
+  <div class="nes-container flex text-center mb-10 flex-wrap sm lg">
     <div class="text-center flex-1 mb-10 width100 select">
       <select
         required
