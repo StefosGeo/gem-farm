@@ -1,7 +1,7 @@
 
 @font-face{
   font-family: "DIMIS";;
-  src: local("DIMIS"), url(./fonts/DIMITRI_.TTF);
+  src: url(./fonts/DIMITRI_.TTF);
 }
 
 body {
