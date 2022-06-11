@@ -16,6 +16,9 @@ body {
   color: #fff;
 }
 
+.logo {
+  width: auto;
+}
 
 .orange_c {
   background-color: #961d80;
@@ -29,12 +32,13 @@ body {
   color: #ffffff;
 }
 .choose-wallet {
-  width: 1037px;
+  width: 100%;
   height: 80px;
   left: 201px;
   top: 275px;
   background: #363636;
   border-radius: 12px;
+  max-width: 500px;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
