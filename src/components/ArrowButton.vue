@@ -1,5 +1,5 @@
 <template>
-  <button :disabled="disabled">
+  <button :disabled="disabled" class="arrow">
     <img
       src="../assets/blue_arrow.png"
       alt="right"

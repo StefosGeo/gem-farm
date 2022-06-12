@@ -16,6 +16,9 @@ body {
   color: #fff;
 }
 
+.arrow{
+  min-width: 40px;
+}
 .logo {
   width: auto;
 }
