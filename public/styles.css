@@ -61,6 +61,7 @@ select {
   border-radius: 15px;
   /* padding: 2.5rem 2rem; */
   padding: 32px;
+  min-width: 50 px;
 }
 .disabled-button {
   background-color: #df5e6a;
