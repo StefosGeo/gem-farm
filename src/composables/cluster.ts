@@ -20,10 +20,10 @@ const clusterURLMapping = {
 
 
 export enum BankAddr {
-  DEV = 'HQV3VNGyLjmxhttdf9k7KuHKVmAbeRqeJAqJJ9id6SB5',
+  DEV = "5UAtooZDayTZUfJMKy4VTYUjREUsHbuxpqfxQczjenmZ",
  //  LUX = '9VTFBGEhy3KAVR1WNQxPeuZrKevVyoayUUGUixaVoLQ3',
   // Chimp = "GMmjNJiz6bM97iwffp8UcASXCj28eDR58SpQguz7oEnx",
-  Bads = "HQV3VNGyLjmxhttdf9k7KuHKVmAbeRqeJAqJJ9id6SB5"
+  Bads = "5UAtooZDayTZUfJMKy4VTYUjREUsHbuxpqfxQczjenmZ"
   //LUX = '2S2G3UQQG4wABb5QgWreEPRrgPb5PSABJKFb51RTzZdY',
 }
 

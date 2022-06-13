@@ -40,7 +40,7 @@ export default defineComponent({
   setup() {
     // cluster
     const { cluster, setCluster, getClusterURL } = useCluster();
-    setCluster(Cluster.Mainnet);
+    setCluster(Cluster.Devnet);
 
     const chosenCluster = computed({
       get() {
