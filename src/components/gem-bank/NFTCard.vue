@@ -47,8 +47,8 @@ img {
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .card:hover {

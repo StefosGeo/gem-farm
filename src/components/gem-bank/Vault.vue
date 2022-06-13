@@ -16,7 +16,7 @@
     />
 
     <!--mid-->
-    <div class="p-16 m-5 flex flex-col justify-center align-start">
+    <div class="p-8 flex flex-col justify-center align-start">
       <ArrowButton
         :disabled="vaultLocked"
         class="my-2 pb-20 justify-center align-center"
