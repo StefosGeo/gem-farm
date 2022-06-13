@@ -23,7 +23,7 @@ export default {
 
 
 body {
-  background-image: url('./assets/bg-bads.png');
+  background-image: url('./assets/moonkeys_bg.jpg');
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;
