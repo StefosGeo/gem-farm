@@ -61,7 +61,7 @@
           End cooldown
         </button>
         <button class="nes-btn huVjiU is-warning orange_c" @click="claim">
-          Claim {{ availableB / 10e9}} $BADS
+          Claim {{ availableB / 10e9}} $MKEY
         </button>
         <!-- </div> -->
       </Vault>
