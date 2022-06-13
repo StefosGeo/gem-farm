@@ -20,14 +20,14 @@ const clusterURLMapping = {
 
 
 export enum BankAddr {
-  DEV = '2S2G3UQQG4wABb5QgWreEPRrgPb5PSABJKFb51RTzZdY',
+  DEV = 'HQV3VNGyLjmxhttdf9k7KuHKVmAbeRqeJAqJJ9id6SB5',
  //  LUX = '9VTFBGEhy3KAVR1WNQxPeuZrKevVyoayUUGUixaVoLQ3',
   // Chimp = "GMmjNJiz6bM97iwffp8UcASXCj28eDR58SpQguz7oEnx",
-  Bads = "DUtYW9jCoqZNMVHKLTrZYLD4cvRvc7aEHd6EsgxW7JFG"
+  Bads = "HQV3VNGyLjmxhttdf9k7KuHKVmAbeRqeJAqJJ9id6SB5"
   //LUX = '2S2G3UQQG4wABb5QgWreEPRrgPb5PSABJKFb51RTzZdY',
 }
 
-const cluster = ref<Cluster>(Cluster.Mainnet);
+const cluster = ref<Cluster>(Cluster.Devnet);
 
 export default function useCluster() {
   const getClusterURL = (): string => clusterURLMapping[cluster.value];
