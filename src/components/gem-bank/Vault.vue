@@ -324,6 +324,7 @@ export default defineComponent({
 <style scoped>
 .container {
   background-color: #363636;
+  opacity: 0.7;
 }
 .locked {
   @apply text-center bg-black text-white;

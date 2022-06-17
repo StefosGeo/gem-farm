@@ -41,6 +41,7 @@ export default defineComponent({
 <style>
 .title {
   background-color: #474747;
+  opacity: 0.85;
   width: 100%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;

@@ -88,6 +88,7 @@ export default defineComponent({
   background-repeat: no-repeat;
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
+  opacity: 0.7;
 }
 .option {
   height: 100px;
