@@ -12,6 +12,7 @@ body {
 
 .orange_c {
   background-color: #f07604;
+  opacity: 0.75;
 }
 .huVjiU {
   font-family: 'Poppins';
@@ -87,6 +88,7 @@ select {
   font-size: 18px;
   padding: 5px;
   background-color: #f08b47;
+  opacity: 0.75;
 }
 .right-buttons {
   width: 50%;
